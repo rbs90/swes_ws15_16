@@ -2,7 +2,7 @@
 
 int main(int argc, char **argv){
 	if (argc != 2){
-		printf("Usage: ./result <0-255>\n");
+		printf("Usage: ./bitreverse <0-255>\n");
 		return 1;
 	}
 
