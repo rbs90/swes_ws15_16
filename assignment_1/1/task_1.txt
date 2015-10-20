@@ -1,0 +1,1 @@
+Already experimented with Atmel microcontrollers since I was 14/15. Now I own a Rasperry Pi, but only used it as a Linux server or media station so far.
