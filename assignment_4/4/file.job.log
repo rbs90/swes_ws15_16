@@ -1,0 +1,13 @@
+/BATCH  
+/COM,ANSYS RELEASE                   BUILD 16.1      UP20150325       08:47:43
+/input,menust,tmp,  
+/GRA,POWER
+/GST,ON
+/PLO,INFO,3
+/GRO,CURL,ON
+*SET,_REMOTE_VIS_ID,'21'
+/CPLANE,1   
+/REPLOT,RESIZE  
+WPSTYLE,,,,,,,,0
+FINISH  
+! /EXIT,NOSAV   

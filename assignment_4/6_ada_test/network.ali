@@ -1,0 +1,73 @@
+V "GNAT Lib v4.9"
+M P W=b
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_STREAMS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U network%b		network.adb		fd3f0fa7 NE OO SU IL
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W gnat%s		gnat.ads		gnat.ali
+W gnat.sockets%s	g-socket.adb		g-socket.ali
+W system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20140129161953 f86a4103
+D a-finali.ads		20111121113555 52ecdc1b
+D a-stream.ads		20140122164720 1a984740
+D a-tags.ads		20111212115430 6c0509d0
+D a-unccon.ads		20070406091342 f9eb8f06
+D a-uncdea.ads		20070406091342 f15a5ed1
+D gnat.ads		20110801150502 fd2ad2f1
+D g-socket.ads		20140219150543 923c234a
+D interfac.ads		20140225151838 69adb1b9
+D i-c.ads		20110801143639 5421119b
+D network.adb		20160111125503 6f032ced
+D system.ads		20141119215827 90249111
+D s-exctab.ads		20140225151139 54135002
+D s-finmas.ads		20140225151139 814daec4
+D s-finroo.ads		20120426095924 4ff27390
+D s-oscons.ads		20141119215827 a445b120
+D s-parame.ads		20140225151139 ab8cb46a
+D s-pooglo.ads		20110804083314 542f33d0
+D s-soflin.ads		20140225151139 aa763b52
+D s-stache.ads		20140225151139 a37c21ec
+D s-stalib.ads		20140225151139 a891183f
+D s-stoele.ads		20140225151139 2dc34a04
+D s-stoele.adb		20140225151139 ed88f8fb
+D s-stopoo.ads		20131010103753 b16154c2
+D s-string.ads		20140225151139 8fe54fb7
+D s-ststop.ads		20140225151139 e6693757
+D s-traent.ads		20140225151139 b5116092
+X 8 gnat.ads
+34K9*GNAT 37e9 12|1r6 1r25
+X 9 g-socket.ads
+58K14*Sockets 1263e17 12|1w11 1r30
+379U14*Initialize 12|18s4
+412I9*Socket_Type<integer> 12|5r17
+479I9*Port_Type<integer>
+505R9*Sock_Addr_Type 508e14 12|6r17
+506r7*Addr{488R9} 12|10m15
+507i7*Port{479I9} 12|11m15
+524V13*Inet_Addr{488R9} 12|10s23
+805U14*Create_Socket 12|9s7
+842U14*Close_Socket 12|15s7
+845U14*Connect_Socket 12|12s7
+1007P9*Stream_Access(4|39R9) 12|7r17
+1010V13*Stream{1007P9} 12|13s18
+X 12 network.adb
+3U11*network 3b11 20t4
+4U14 sendData 4b14 4>24 4>37 16t7 19s4
+4s24 IP{string} 10r33
+4s37 Msg{string} 14r30
+5i7 Client{9|412I9} 9m22 12r23 13r26 15r21
+6r7 Address{9|505R9} 10m7 11m7 12r31
+7p7 Channel{9|1007P9} 13m7 14r21
+
