@@ -53,16 +53,15 @@ int main (void) {
 	for (int i = 0; i < 10; i++) {
  	    size = recv (new_socket, buffer, 2, 0);
 		int data = buffer[1] + (buffer[0] << 8);	    
+		bool leds[10];
+
 		for(int k = 0; k < 8; k++)
 		{
-		    cout << ((buffer[0] >> k) & 1);
+		    leds[k] = (buffer[0] >> k) & 1;
 		}
-		cout << endl;
-    	for(int k = 0; k < 8; k++)
-		{
-		  cout << ((buffer[1] >> k) & 1);
-		}
-		cout << endl;
+
+		leds[8] = buffer[1] & 1;
+		leds[9] = (buffer[1] >> 1) & 1;
 	 } 
 	 close (new_socket);
   }
